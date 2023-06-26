@@ -8,6 +8,8 @@ private:
     double _numerator;
     double _denominator;
 public:
+    fraction();
+
     fraction(double numerator, double denominator);
 
     void GetSum();
@@ -25,4 +27,14 @@ public:
     void GetDivRev();
 
     void GetDivRevF();
+
+    fraction operator+(fraction fr2);
+
+    fraction operator-(fraction fr2);
+
+    fraction operator*(fraction fr2);
+
+    fraction operator/(fraction fr2);
+
+    void GetFractionData();
 };
